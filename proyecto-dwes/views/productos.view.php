@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8">
     <title>Listado de Productos</title>
-    <link rel="stylesheet" href="public/style.css"> 
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/public/style.css"> 
 </head>
 <body>
     <nav>
@@ -45,5 +45,3 @@
     <?php endif; ?>
 </body>
 </html>
-
-                <!-- hola --> 

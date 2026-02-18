@@ -8,6 +8,22 @@ $url = $_GET['url'] ?? 'home';
 $url_components = explode('/', $url);
 $page = $url_components[0]; 
 
+switch($url) {
+    case 'productos':
+        require_once 'views/productos.view.php'; 
+        break;
+    case 'home':
+        require_once 'views/home.view.php'; 
+        break;
+    case 'login':
+        echo "<h1>Formulario de Login</h1>";
+        break;
+    default:
+        http_response_code(404);
+        echo "<h1>Error 404 - Página no encontrada</h1>";
+        break;
+}
+
 switch($page) {
     case 'productos':
         $listado = [
@@ -43,4 +59,6 @@ switch($page) {
         echo "<h1>Error 404 - Página no encontrada</h1>";
         break;
 } 
+
+
 ?>

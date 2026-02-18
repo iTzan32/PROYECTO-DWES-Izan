@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> 
     <meta charset="UTF-8">
     <title>Listado de Productos</title>
     <link rel="stylesheet" href="public/style.css"> 
@@ -45,3 +45,5 @@
     <?php endif; ?>
 </body>
 </html>
+
+                <!-- hola --> 
